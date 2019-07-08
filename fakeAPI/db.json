@@ -1,0 +1,25 @@
+{
+    "users" : [
+        {
+            "id" : 1,
+            "username" : "rezhariansyah",
+            "password" : "raffiandhika",
+            "name" : "Rezha Riansyah R",
+            "email" : "rezharatulangi@gmail.com",
+            "phone" : "081317083273",
+            "gender" : "male"           
+        }
+    ],
+    "product" : [
+        {
+            "id" : 1,
+            "productName" : "jam",
+            "prize" : 4000,
+            "rating" : 3,
+            "img" : "blabla",
+            "discount" : 80,
+            "role" : "buka mall"
+        }
+    ],
+    "cart" : []
+}
