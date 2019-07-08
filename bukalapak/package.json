@@ -9,6 +9,7 @@
     "react": "^16.8.6",
     "react-alice-carousel": "^1.15.1",
     "react-dom": "^16.8.6",
+    "react-fontawesome": "^1.6.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0",
