@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Navbar from './components/navbar/navbar';
 import Home from './screens/home';
 import ProductList from './components/productList/productList';
 import ProductDetail from './components/productDetail/productDetail';
@@ -11,7 +10,6 @@ import Cart from './components/cart/cart';
 function App() {
   return (
     <div>
-      <Navbar/>
       <Route path='/' component={Home} exact/>
       <Route path='/productList' component={ProductList} exact/>
       <Route path='/productDetail' component={ProductDetail} exact/>
