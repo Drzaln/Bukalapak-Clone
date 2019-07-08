@@ -6,6 +6,18 @@ class Payment extends Component {
         return (
             <Cardpayment 
             headcardnamea= "Detail Pembeli"
+            cardbodya= {
+                <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i><b>
+                  Rizal
+                  </b>
+                  </div>
+                <div class="card-body">
+                  Sumedang
+                </div>
+              </div>
+            }
             headcardnameb= "Ringkasan Belanja"
             btncardb = "Pilih Metode Pembayaran"
             headcardnamec= "Detail Belanja"
