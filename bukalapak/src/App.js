@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Navbar from './screens/navbar/navbar';
-import Home from './screens/home/home';
-import ProductList from './screens/productList/productList';
-import ProductDetail from './screens/productDetail/productDetail';
-import Payment from './screens/payment/payment';
-import Cart from './screens/cart/cart';
+import Navbar from './components/navbar/navbar';
+import Home from './screens/home';
+import ProductList from './components/productList/productList';
+import ProductDetail from './components/productDetail/productDetail';
+import Payment from './components/payment/payment';
+import Cart from './components/cart/cart';
 
 function App() {
   return (
