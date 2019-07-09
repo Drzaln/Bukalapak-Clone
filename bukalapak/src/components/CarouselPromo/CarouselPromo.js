@@ -25,6 +25,7 @@ class CarouselPromo extends React.Component {
     };
 
     return (
+      <div className="container-fluid">
       <AliceCarousel
         duration={400}
         autoPlay={true}
@@ -45,6 +46,7 @@ class CarouselPromo extends React.Component {
         <div className='ml-2 mr-2 mt-2 mb-2'><img src="https://s1.bukalapak.com/uploads/flash_banner/12514/homepage_banner/s-834-352/Banner_A-B_Test_-_3terbaik77.jpg.webp" style={{width:"100%"}} /></div>
         <div className='ml-2 mr-2 mt-2 mb-2'><img src="https://s1.bukalapak.com/uploads/flash_banner/13514/homepage_banner/s-834-352/nuBanner_A-B_Test_-_3.jpg.webp" style={{width:"100%"}} /></div>
       </AliceCarousel>
+      </div>
     );
   }
 }
