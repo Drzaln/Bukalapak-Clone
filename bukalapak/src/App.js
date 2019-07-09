@@ -6,6 +6,8 @@ import ProductList from './components/productList/productList';
 import ProductDetail from './components/productDetail/productDetail';
 import Payment from './components/payment/payment';
 import Cart from './components/cart/cart';
+import SearchFilter from './components/SearchFilter/searchFilter';
+import CategorySection from './components/categorySection/categorySection';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path='/productDetail' component={ProductDetail} exact/>
       <Route path='/cart' component={Cart} exact/>
       <Route path='/payment' component={Payment} exact/>
+      <Route path='/searchFilter' component={SearchFilter} exact/>
+      <Route path='/categorySection' component={CategorySection} exact/>
     </div>
   );
 }
