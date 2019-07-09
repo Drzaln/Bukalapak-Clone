@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import Home from './screens/home';
 import ProductList from './components/productList/productList';
 import ProductDetail from './components/productDetail/productDetail';
-import Payment from './components/payment/payment';
+import Payment from './components/payment/paymentmethod';
 import Cart from './components/cart/cart';
 
 function App() {
