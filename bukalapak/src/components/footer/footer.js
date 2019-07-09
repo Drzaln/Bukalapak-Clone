@@ -217,7 +217,7 @@ class Footer extends Component {
           </div>
         </div>
         <hr />
-        <div className="row ml-2 mb-5">
+        <div className="row ml-2 mb-5 mb-0">
           <p style={{ fontSize: 12, marginBottom: "4px" }}>
             © 2019 Hak Cipta Terpelihara PT Bukalapak.com.{" "}
             <span style={{ color: "red" }}>

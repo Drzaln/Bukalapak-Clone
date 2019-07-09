@@ -6,7 +6,7 @@ class CategorySection extends Component {
     return (
       <div className="container-fluid">
         <div className="row mt-4">
-          <div className="col-sm-8 justify-content-center">
+          <div className="col-sm-8 justify-content-center sectionPartner">
             <div className="row justify-content-left text-center">
               <div className="col-sm-1 mr-3 mb-4">
                 <img
@@ -283,7 +283,7 @@ class CategorySection extends Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 confirmation">
             <div className="row justify-content-left text-center">
               <div className="col-sm-12">
                 <div className="row">
