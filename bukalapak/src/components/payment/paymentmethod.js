@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Credits from "../../assets/img/credits.png";
 import Cardpayment from "./cardpayment/cardpayment";
 
 class paymentmethod extends Component {
@@ -240,41 +239,6 @@ class paymentmethod extends Component {
                 
               </div>
             </div>
-
-            {/* <div class="card-header">
-              <input type="radio" />
-              &nbsp;&nbsp;<b>Transfer Bank</b>
-              <span style={{ border: 1 }}>
-                <img
-                  src="https://s0.bukalapak.com/images/external_logo_payment_230519.png"
-                  width="13%"
-                />
-                <img
-                  src="https://i.ibb.co/svkmpTX/Screenshot-from-2019-07-09-17-49-02.png"
-                  width="13%"
-                />
-                <img
-                  src="https://i.ibb.co/svkmpTX/Screenshot-from-2019-07-09-17-49-02.png"
-                  width="13%"
-                />
-              </span>
-            </div>
-            <div class="card-body">
-              <div>
-                <span>
-                  Credits kamu <b>Rp0</b>
-                </span>
-                <br />
-                <br />{" "}
-                <span>
-                  <p>
-                    Credits kamu tidak mencukupi untuk membayar transaksi ini.
-                    Silakan pilih metode pembayaran lainnya.
-                  </p>
-                </span>
-              </div>
-            </div>
-           */}
           </div>
         }
         headcardnameb="Ringkasan Belanja"
@@ -308,7 +272,7 @@ class paymentmethod extends Component {
             </div>
           </div>
         }
-        btncardb="Bayar"
+        btncardb="Bayar" link="/payment/paymetod/payreport"
       />
     );
   }

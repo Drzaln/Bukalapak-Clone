@@ -1,0 +1,15 @@
+.valign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+.panel {border-radius: 0}
+
+.u-align-center{
+  text-align: center;
+
+}
+.u-txt--bold{
+  color: #c30f42;
+}

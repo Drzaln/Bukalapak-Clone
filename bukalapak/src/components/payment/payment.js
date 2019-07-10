@@ -103,7 +103,7 @@ class Payment extends Component {
                 </div>
           </div>
         }
-        btncardb="Pilih Metode Pembayaran"
+        btncardb="Pilih Metode Pembayaran" link="/payment/paymetod"
         headcardnamec="Detail Belanja"
         cardbodyc ={
           <div class="card mb-3">
