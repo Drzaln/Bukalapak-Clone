@@ -7,7 +7,7 @@ import BukaMall from "../components/carousels/bukaMall";
 import SearchFilter from '../components/SearchFilter/searchFilter';
 import CategorySection from '../components/categorySection/categorySection';
 import '../support/styles/home.css';
-import ProductList from '../components/ProductList/productList';
+import ProductList from '../components/productList/productList';
 
 class Home extends Component {
     render() {
