@@ -13,3 +13,8 @@
 .footerP p{
     font-size: 12
 }
+
+.footer {
+    height: 100%;
+    padding-top: 25px;
+}
