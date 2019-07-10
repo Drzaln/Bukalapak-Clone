@@ -28,7 +28,7 @@ const cardpayment = (props) => {
                   </b>
                   </div>
                 <div class="card-body">
-                {props.cardbodyb    }
+                {props.cardbodyb}
                 </div>
                 <div class="card-footer small text-muted">
                   <input type="button" class="btn btn-danger btn-block" value={props.btncardb} />

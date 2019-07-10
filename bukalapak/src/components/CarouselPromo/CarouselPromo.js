@@ -24,6 +24,7 @@ class CarouselPromo extends React.Component {
     };
 
     return (
+      <div className="container-fluid">
       <AliceCarousel
         duration={400}
         autoPlay={true}
@@ -88,6 +89,7 @@ class CarouselPromo extends React.Component {
           />
         </div>
       </AliceCarousel>
+      </div>
     );
   }
 }
