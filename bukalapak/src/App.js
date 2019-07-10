@@ -3,7 +3,7 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import Home from './screens/home';
 import Promoini from './components/carousels/promoHariIni';
-import ProductDetail from './components/productDetail/productDetail';
+import ProductDetail from './screens/productDetail';
 import Payment from './components/payment/paymentmethod';
 import Cart from './components/cart/cart';
 import SearchFilter from './components/SearchFilter/searchFilter';
