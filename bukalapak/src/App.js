@@ -8,10 +8,9 @@ import Payment from './components/payment/payment';
 import Paymentmetod from './components/payment/paymentmethod';
 import Paymentreport from './components/payment/paymentreport';
 import Cart from './components/cart/cart';
-import SearchFilter from './components/SearchFilter/searchFilter';
-import CategorySection from './components/categorySection/categorySection';
-import ProductList from "./components/productList/productList";
 import BukaMall from "../src/components/carousels/bukaMall";
+import SearchFilter from "../src/components/SearchFilter/searchFilter";
+import CategorySection from "../src/components/categorySection/categorySection";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
       <Route path='/promoini' component={Promoini} exact/>
       <Route path='/bukaMall' component={BukaMall} exact/>
       <Route path='/productDetail' component={ProductDetail} exact/>
-      <Route path='/productList' component={ProductList} exact/>
       <Route path='/cart' component={Cart} exact/>
       <Route path='/payment' component={Payment} exact/>
       <Route path='/payment/paymetod' component={Paymentmetod} exact/>
