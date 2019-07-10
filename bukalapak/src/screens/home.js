@@ -5,6 +5,7 @@ import CarouselPromo from '../components/CarouselPromo/CarouselPromo';
 import SearchFilter from '../components/SearchFilter/searchFilter';
 import CategorySection from '../components/categorySection/categorySection';
 import '../support/styles/home.css';
+import PromoHariIni from '../components/PromoComponents/promoHariIni';
 
 class Home extends Component {
     render() {
@@ -15,6 +16,7 @@ class Home extends Component {
                 <CarouselPromo/>               
                 <SearchFilter/>
                 <CategorySection/>
+                <PromoHariIni/>
                 <Footer/>
                 </div>                              
             </div>
