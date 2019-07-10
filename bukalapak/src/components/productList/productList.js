@@ -27,7 +27,7 @@ class ProductList extends Component {
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
             return (
-                <div className="card cardProduct mr-3" style={{width: '12rem'}}>
+                <div className="card cardProduct mr-3 mb-3" style={{width: '12rem'}}>
                     <img src={val.img} className="card-img-top image" alt="..." />
                     <div className="middle">
                         <div className="text"><img src={val.lapakImg} className="rounded-circle" alt=""/></div>
