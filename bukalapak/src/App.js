@@ -8,7 +8,7 @@ import Payment from './components/payment/paymentmethod';
 import Cart from './components/cart/cart';
 import SearchFilter from './components/SearchFilter/searchFilter';
 import CategorySection from './components/categorySection/categorySection';
-import ProductList from "./components/productList/productList";
+import ProductList from "./components/ProductList/productList";
 import BukaMall from "../src/components/carousels/bukaMall";
 
 function App() {

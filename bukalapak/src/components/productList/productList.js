@@ -27,7 +27,7 @@ class ProductList extends Component {
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
             return (                                                      
-                <div className="card cardProduct mr-2" style={{width: '12rem'}}>
+                <div className="card cardProduct mr-3" style={{width: '12rem'}}>
                     <img src={val.img} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hidden">{val.productName}</h5>
@@ -40,10 +40,24 @@ class ProductList extends Component {
     }
     render() {
         return (
-            <div className="contaienr-fluid">
+            <div className="ml-5 mr-5 mt-5">
                 <div className="row justify-content-md-center">
-                    <div className="col-sm-2">
-
+                    <div className="col-sm-2 text-right">
+                        <h5 className="mb-3">Kategori</h5>
+                        <p><b>Semua Kategori</b><br/><br/>
+                        <b>Fashion Pria</b><br/><br/>
+                        <b>Fashion Wanita</b><br/><br/>
+                        <b>Fashion Anak</b><br/><br/>
+                        <b>Rumah Tangga</b><br/><br/>
+                        <b>Perawatan dan Kecantikan</b></p>
+                        <hr/>
+                        <h5 className="mb-3">Jasa Pengiriman</h5>
+                        <p><b>J&T REG <input type="checkbox"/></b></p>
+                        <p><b>Paxel Same Day <input type="checkbox"/></b></p>
+                        <p><b>SiCepat BEST <input type="checkbox"/></b></p>
+                        <p><b>SiCepat REG <input type="checkbox"/></b></p>
+                        <p><b>Lion Parcel REGPACK <input type="checkbox"/></b></p>
+                        <p><b>Lion Parcel ONEPACK <input type="checkbox"/></b></p>
                     </div>
                     <div className="col-sm-10">    
                         <div className="row justify-content-md-center">
