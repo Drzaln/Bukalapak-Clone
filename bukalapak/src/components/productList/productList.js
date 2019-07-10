@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import '../../support/styles/productList.css';
 import { localServer } from '../../support/urlAPI/localServer';
-import { Link } from 'react-router-dom';
-import Axios from 'axios'
+import { Link } from './node_modules/react-router-dom';
+import Axios from './node_modules/axios'
 
 class ProductList extends Component {
     state = {
