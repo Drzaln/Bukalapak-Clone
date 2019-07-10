@@ -26,14 +26,18 @@ class ProductList extends Component {
 
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
-            return (                                                      
+            return (
                 <div className="card cardProduct mr-3" style={{width: '12rem'}}>
-                    <img src={val.img} className="card-img-top" alt="..." />
+                    <img src={val.img} className="card-img-top image" alt="..." />
+                    <div className="middle">
+                        <div className="text"><img src={val.lapakImg} className="rounded-circle" alt=""/></div>
+                    </div>
+                    <h4><span className="badge badge-danger rounded-circle badgeDiscount">{val.discount}%</span></h4>
                     <div className="card-body">
                         <h5 className="card-title hidden">{val.productName}</h5>
                         <p className="card-text hidden">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </div>                                                             
+                </div>
             )
         })
         return jsx
@@ -62,8 +66,8 @@ class ProductList extends Component {
                     <div className="col-sm-10">    
                         <div className="row justify-content-md-center">
                             {this.renderProductJsx()}
-                        </div>                                            
-                    </div>                               
+                        </div>
+                    </div>
                 </div>
             </div>
             
