@@ -7,6 +7,7 @@ import BukaMall from "../components/carousels/bukaMall";
 import SearchFilter from '../components/SearchFilter/searchFilter';
 import CategorySection from '../components/categorySection/categorySection';
 import '../support/styles/home.css';
+import ProductList from '../components/productList/productList';
 
 class Home extends Component {
     render() {
@@ -14,13 +15,14 @@ class Home extends Component {
             <div className="wrap">
                 <Header/>
                 <div className="container-fluid">
-                <CarouselPromo/>
-                <SearchFilter/>
-                <CategorySection/>
-                <h1>Home</h1>
-                <PromoIni/>
-                <BukaMall/>
-                <Footer/>
+                    <CarouselPromo/>
+                    <SearchFilter/>
+                    <CategorySection/>
+                    <h1>Home</h1>
+                    <PromoIni/>
+                    <BukaMall/>
+                    <ProductList/>
+                    <Footer/>
                 </div>
             </div>
         );
