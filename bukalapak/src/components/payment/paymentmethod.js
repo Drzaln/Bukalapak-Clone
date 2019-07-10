@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Credits from "../../assets/img/credits.png";
 import Cardpayment from "./cardpayment/cardpayment";
 
 class paymentmethod extends Component {
@@ -308,7 +307,7 @@ class paymentmethod extends Component {
             </div>
           </div>
         }
-        btncardb="Bayar"
+        btncardb="Bayar" link="/payment/paymetod/payreport"
       />
     );
   }

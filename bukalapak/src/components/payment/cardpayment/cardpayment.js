@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const cardpayment = (props) => {
     // render() {
@@ -28,10 +29,12 @@ const cardpayment = (props) => {
                   </b>
                   </div>
                 <div class="card-body">
-                {props.cardbodyb}
+                {props.cardbodyb    }
                 </div>
                 <div class="card-footer small text-muted">
+                <Link to={props.link}>
                   <input type="button" class="btn btn-danger btn-block" value={props.btncardb} />
+                </Link>
                 </div>
               </div>
             </div>
