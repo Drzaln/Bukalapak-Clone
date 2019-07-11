@@ -64,7 +64,7 @@ class ProductList extends Component {
                         <p><b>Lion Parcel ONEPACK <input type="checkbox"/></b></p>
                     </div>
                     <div className="col-sm-10">    
-                        <div className="row justify-content-md-center">
+                        <div className="row justify-content-md-left">
                             {this.renderProductJsx()}
                         </div>
                     </div>

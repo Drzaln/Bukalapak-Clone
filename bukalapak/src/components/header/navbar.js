@@ -12,6 +12,9 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import '../../support/styles/navbar.css';
+import Axios from 'axios';
+import { localServer } from '../../support/urlAPI/localServer';
+import ProductList from '../productList/productList'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -27,6 +30,7 @@ export default class Header extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
     return (
       <div>
