@@ -3,8 +3,51 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Footer from "../components/footer/footer";
 import ProductList from "../components/productList/productList";
 import Navbar from "../components/header/navbar";
+import { localServer } from '../support/urlAPI/localServer';
+import Axios from "axios";
 
 class ProductDetail extends Component {
+  state = {
+    product: {
+      id: '',
+    productName: '',
+    prize: '',
+    rating: '',
+    img: '',
+    discount: '',
+    lapakName: '',
+    lapakImg: '',
+    lapakType: '',
+    category: '',
+    create_at: '',
+    role: ''
+       
+    }
+}
+  componentDidMount(){
+    let id = this.props.match.params.id
+    Axios.get(localServer +`/product/${id}`).then(res =>{
+        let productlist = res.data
+        console.log(res)
+        this.setState({
+            product:{
+              id: productlist.id,
+              productName: productlist.productName,
+              prize: productlist.prize,
+              rating: productlist.rating,
+              img: productlist.img,
+              discount: productlist.discount,
+              lapakName: productlist.lapakName,
+              lapakImg: productlist.lapakImg,
+              lapakType: productlist.lapakType,
+              category: productlist.category,
+              create_at: productlist.create_at,
+              role: productlist.role
+            }
+        })
+    })
+}
+
   render() {
     return (
       <div>
@@ -22,7 +65,7 @@ class ProductDetail extends Component {
                     <div className="col-sm">
                       <img
                         style={{ width: "100%" }}
-                        src="https://s3.bukalapak.com/img/8030598897/w-300/data.png.webp"
+                        src={this.state.product.img}
                         className="img-fluid"
                         alt="..."
                       />
@@ -31,14 +74,14 @@ class ProductDetail extends Component {
                       <img
                       alt="..."
                         style={{ width: "100%" }}
-                        src="https://s3.bukalapak.com/img/8385296813/w-300/pompa_galon_air_electric_recharge___dispenser_air_electric.jpg"
+                        src={this.state.product.img}
                       />
                     </div>
                     <div className="col-sm">
                       <img
                       alt="..."
                         style={{ width: "100%" }}
-                        src="https://s0.bukalapak.com/img/5354396813/thumb/pompa_galon_air_electric_recharge___dispenser_air_electric.jpg.webp"
+                        src={this.state.product.img}
                       />
                     </div>
                     <div className="col-sm">
@@ -57,7 +100,7 @@ class ProductDetail extends Component {
                     </div>
                   </div>
                   <img
-                    src="https://s3.bukalapak.com/img/8030598897/w-300/data.png.webp"
+                    src={this.state.product.img}
                     className="img-fluid"
                     alt="..."
                     style={{ width: "100%" }}
@@ -74,19 +117,19 @@ class ProductDetail extends Component {
                       <text style={{ fontSize: 12 }}>
                         <b>Kode QR untuk transaksi di aplikasi Bulakapak</b>{" "}
                         Temukan fitur scan kode QR di kolom pencarian aplikasi
-                        Bulakapak.
+                        Bulakapak. 
                       </text>
                     </div>
                   </div>
                 </div>
                 <div className="col-8" style={{ marginTop: "1%" }}>
                   <p className="font-weight-bold" style={{ fontSize: 20 }}>
-                    Pompa Galon Air Electric Recharge - Dispenser Air Electric
+                  {this.state.product.productName}
                   </p>
                   <p>ini bintang</p>
                   <div className="dropdown-divider" />
                   <text className="font-weight-bolder" style={{ fontSize: 35 }}>
-                    Rp50.000
+                    Rp{this.state.product.prize}
                   </text>
                   <div className="col" style={{ paddingLeft: 0 }}>
                     <button
@@ -172,10 +215,10 @@ class ProductDetail extends Component {
               
               </div>
               <div className="row" style={{ marginLeft: 4, marginTop: 8, marginBottom: 8, marginRight:16 }} >
-              <img style={{width:"20%", borderRadius:50}} src="https://s3.bukalapak.com/img/8030598897/w-300/data.png.webp"/>
+              <img style={{width:"20%", borderRadius:50}} src={this.state.product.lapakImg}/>
               <div className="col">
               <div className="row" style={{marginLeft:4}} >
-              <text className="font-weight-bold">Lapak Awal</text>  
+              <text className="font-weight-bold">{this.state.product.lapakName}</text>  
               </div>
               <div className="row" style={{marginLeft:4}} >
               <text style={{fontSize: 12}} >100% (2048 feedback)</text>  
