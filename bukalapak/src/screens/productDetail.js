@@ -5,6 +5,9 @@ import ProductList from "../components/productList/productList";
 import Navbar from "../components/header/navbar";
 import { localServer } from '../support/urlAPI/localServer';
 import Axios from "axios";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+// import ModalExample from "../components/modals/modalCart";
+
 
 class ProductDetail extends Component {
   state = {
@@ -22,30 +25,56 @@ class ProductDetail extends Component {
     create_at: '',
     role: ''
        
-    }
+    },
+    modal: false,
+    toggle : this.toggle.bind(this)
+    
 }
-  componentDidMount(){
-    let id = this.props.match.params.id
-    Axios.get(localServer +`/product/${id}`).then(res =>{
-        let productlist = res.data
-        console.log(res)
-        this.setState({
-            product:{
-              id: productlist.id,
-              productName: productlist.productName,
-              prize: productlist.prize,
-              rating: productlist.rating,
-              img: productlist.img,
-              discount: productlist.discount,
-              lapakName: productlist.lapakName,
-              lapakImg: productlist.lapakImg,
-              lapakType: productlist.lapakType,
-              category: productlist.category,
-              create_at: productlist.create_at,
-              role: productlist.role
-            }
-        })
-    })
+
+toggle() {
+  this.setState(prevState => ({
+    modal: !prevState.modal
+  }));
+}
+
+componentDidMount(){
+  this.getDetailProduct()
+  this.getAllProduct()
+  window.scrollTo(0, 0)
+}
+
+getDetailProduct = () => {
+  let id = this.props.match.params.id
+  Axios.get(localServer +`/product/${id}`).then(res =>{
+      let productlist = res.data
+      console.log(res)
+      this.setState({
+          product:{
+            id: productlist.id,
+            productName: productlist.productName,
+            prize: productlist.prize,
+            rating: productlist.rating,
+            img: productlist.img,
+            discount: productlist.discount,
+            lapakName: productlist.lapakName,
+            lapakImg: productlist.lapakImg,
+            lapakType: productlist.lapakType,
+            category: productlist.category,
+            create_at: productlist.create_at,
+            role: productlist.role
+          }
+      })
+  })
+}
+
+getAllProduct = () => {
+  Axios.get(localServer + '/product')
+  .then((res) => {
+      this.setState({productList : res.data})
+  })
+  .catch((err) => {
+      console.log(err)
+  })
 }
 
   render() {
@@ -129,7 +158,7 @@ class ProductDetail extends Component {
                   <p>ini bintang</p>
                   <div className="dropdown-divider" />
                   <text className="font-weight-bolder" style={{ fontSize: 35 }}>
-                    Rp{this.state.product.prize}
+                    Rp. {this.state.product.prize}
                   </text>
                   <div className="col" style={{ paddingLeft: 0 }}>
                     <button
@@ -141,34 +170,49 @@ class ProductDetail extends Component {
                     </button>
                   </div>
                   <div
-                    className="col col-md-offset-8"
-                    style={{ paddingLeft: 0, marginTop: 8 }}
+                    className="row justify-content-md-center"
+                    style={{ paddingLeft: 0, marginTop: 8}}
                   >
-                    <button
-                      type="button"
-                      className="btn btn-light font-weight-bold"
-                      style={{
-                        borderRadius: 2,
-                        width: "49%",
-                        marginRight: 8,
-                        color: "grey",
-                        borderColor: "#e7e7e7"
-                      }}
-                    >
-                      Tambahkan ke Keranjang
-                    </button>
-                    <button
-                      type="button"
-                      className="btn btn-light font-weight-bold"
-                      style={{
-                        borderRadius: 2,
-                        width: "49%",
-                        color: "grey",
-                        borderColor: "#e7e7e7"
-                      }}
-                    >
-                      Chat Pelapak
-                    </button>
+                  <div className="col-sm-6">
+                  <Button color="danger" onClick={this.toggle} style={{width:"100%"}}> Tambah Keranjang{this.props.buttonLabel}</Button>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Keranjang Belanja</ModalHeader>
+          <ModalBody>
+            <div className="row">
+                <div className="col-sm-6 text-left">
+                    <div className="row">
+                        <div className="col sm 4 gambar">
+                            <img src="https://s1.bukalapak.com/img/69429388811/small/data.png.webp" alt=""/>
+                        </div>
+                        <div className="col sm 7">
+                            <div className="row">
+                                <p>pradia batik pekalongan</p>
+                            </div>
+                            <div className="row">
+                                <input type="button" value="-"/>
+                                <input style={{width:"50px"}} className="text-center" type="text"/>
+                                <input type="button" value="+"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-sm-2 offset-md-2 text-right align-self-center">
+                    Rp.80.000
+                </div>
+                <div className="col-sm-1 align-self-center">
+                    <i style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
+                </div>
+            </div>
+          </ModalBody>
+          <ModalFooter>
+            <Button color="danger" onClick={this.toggle}>Lanjut ke Pembayaran</Button>
+          </ModalFooter>
+        </Modal>
+                  </div>
+                  <div className="col-sm-6">
+                    <input type="button" value="Chat Pelapak" className="btn btn-outline-success" style={{width:"95%"}} />
+                  </div>                        
+                    
                   </div>
                   <div
                     className="col col-md-offset-8"

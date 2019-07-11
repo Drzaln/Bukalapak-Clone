@@ -11,6 +11,7 @@ import Cart from './components/cart/cart';
 import BukaMall from "../src/components/carousels/bukaMall";
 import SearchFilter from "../src/components/SearchFilter/searchFilter";
 import CategorySection from "../src/components/categorySection/categorySection";
+import ProductList from './components/productList/productList';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route path='/payment/paymetod/payreport' component={Paymentreport} exact/>
       <Route path='/searchFilter' component={SearchFilter} exact/>
       <Route path='/categorySection' component={CategorySection} exact/>
+      <Route path='/productList' component={ProductList} exact/>
+      
     </div>
   );
 }

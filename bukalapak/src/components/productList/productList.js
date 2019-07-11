@@ -11,6 +11,7 @@ class ProductList extends Component {
 
     componentDidMount() {
         this.getAllProduct()
+        window.scrollTo(0, 0)
     }
     
 
@@ -62,18 +63,18 @@ class ProductList extends Component {
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
             return (
-                <Link to={'/productDetail/' + val.id} target="_blank" style={{color:'black'}}>
-                <div className="card cardProduct mr-3 mb-3" style={{width: '12rem'}}>
-                    <img src={val.img} className="card-img-top image" alt="..." />
-                    <div className="middle">
-                        <div className="text"><img src={val.lapakImg} className="rounded-circle" alt=""/></div>
+                <Link to={'/productDetail/' + val.id} style={{color:'black', textDecoration:"none"}}>
+                    <div className="card cardProduct mr-3 mb-3" style={{width: '12rem'}}>
+                        <img src={val.img} className="card-img-top image" alt="..." />
+                        <div className="middle">
+                            <div className="text"><img src={val.lapakImg} className="rounded-circle" alt=""/></div>
+                        </div>
+                        <h4><span className="badge badge-danger rounded-circle badgeDiscount">{val.discount}%</span></h4>
+                        <div className="card-body">
+                            <h5 className="card-title hidden">{val.productName}</h5>
+                            <h7>Rp. {val.prize}</h7>
+                        </div>
                     </div>
-                    <h4><span className="badge badge-danger rounded-circle badgeDiscount">{val.discount}%</span></h4>
-                    <div className="card-body">
-                        <h5 className="card-title hidden">{val.productName}</h5>
-                        <p className="card-text hidden">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
                 </Link>
             )
         })
