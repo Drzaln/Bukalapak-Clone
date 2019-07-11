@@ -12,8 +12,14 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import '../../support/styles/navbar.css';
+import Axios from 'axios';
+import { localServer } from '../../support/urlAPI/localServer';
+import ProductList from '../productList/productList';
 
 export default class Header extends React.Component {
+  state = {
+    listProduct : []
+  }
   constructor(props) {
     super(props);
 
@@ -27,6 +33,15 @@ export default class Header extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
+  searchAll = () => {
+    let product = this.refs.input.value
+    Axios.get(localServer + '/product?q=' + product)
+    .then((res) => {
+      this.setState({listProduct : res.data})
+    })
+  }
+
   render() {
     return (
       <div>
@@ -50,7 +65,7 @@ export default class Header extends React.Component {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-              <input className="form-control" type="text" placeholder="Search..." style={{width:250}} />
+              <input className="form-control" type="text" ref="input" onClick={this.searchAll} placeholder="Search..." style={{width:300}} />
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -73,7 +88,7 @@ export default class Header extends React.Component {
             </Collapse>
           </div>          
         </Navbar>
-      </div>
+      </div>      
     );
   }
 }

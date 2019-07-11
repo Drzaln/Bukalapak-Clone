@@ -24,6 +24,41 @@ class ProductList extends Component {
         })
     }
 
+    searchFashionPria = () => {
+        Axios.get(localServer + '/product?q=fashion pria')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchFashionWanita = () => {
+        Axios.get(localServer + '/product?q=fashion wanita')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchElektronik = () => {
+        Axios.get(localServer + '/product?q=elektronik')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchERumahTangga = () => {
+        Axios.get(localServer + '/product?q=rumah tangga')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchPerawatan = () => {
+        Axios.get(localServer + '/product?q=perawatan dan kecantikan')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+    
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
             return (
@@ -48,12 +83,12 @@ class ProductList extends Component {
                 <div className="row justify-content-md-center">
                     <div className="col-sm-2 text-right">
                         <h5 className="mb-3">Kategori</h5>
-                        <p><b>Semua Kategori</b><br/><br/>
-                        <b>Fashion Pria</b><br/><br/>
-                        <b>Fashion Wanita</b><br/><br/>
-                        <b>Fashion Anak</b><br/><br/>
-                        <b>Rumah Tangga</b><br/><br/>
-                        <b>Perawatan dan Kecantikan</b></p>
+                        <p><b style={{cursor:"pointer"}} onClick={this.getAllProduct}>Semua Kategori</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchFashionPria}>Fashion Pria</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchFashionWanita}>Fashion Wanita</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchElektronik}>Elektronik</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchERumahTangga}>Rumah Tangga</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchPerawatan}>Perawatan dan Kecantikan</b></p>
                         <hr/>
                         <h5 className="mb-3">Jasa Pengiriman</h5>
                         <p><b>J&T REG <input type="checkbox"/></b></p>
@@ -64,7 +99,7 @@ class ProductList extends Component {
                         <p><b>Lion Parcel ONEPACK <input type="checkbox"/></b></p>
                     </div>
                     <div className="col-sm-10">    
-                        <div className="row justify-content-md-center">
+                        <div className="row justify-content-md-left">
                             {this.renderProductJsx()}
                         </div>
                     </div>
