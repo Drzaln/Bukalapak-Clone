@@ -5,8 +5,7 @@ import ProductList from "../components/productList/productList";
 import Navbar from "../components/header/navbar";
 import { localServer } from '../support/urlAPI/localServer';
 import Axios from "axios";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-// import ModalExample from "../components/modals/modalCart";
+import swal from 'sweetalert'
 
 
 class ProductDetail extends Component {
@@ -74,6 +73,15 @@ getAllProduct = () => {
   })
   .catch((err) => {
       console.log(err)
+  })
+}
+
+addToCart = () => {
+  Axios.post(localServer + '/cart' , this.state.product)
+  .then((res) => {
+    let { cart } = this.state;
+    this.setState({cart})
+    swal("produk berhasil masuk ke keranjang", "You clicked the button!", "success");
   })
 }
 
@@ -174,40 +182,7 @@ getAllProduct = () => {
                     style={{ paddingLeft: 0, marginTop: 8}}
                   >
                   <div className="col-sm-6">
-                  <Button color="danger" onClick={this.toggle} style={{width:"100%"}}> Tambah Keranjang{this.props.buttonLabel}</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Keranjang Belanja</ModalHeader>
-          <ModalBody>
-            <div className="row">
-                <div className="col-sm-6 text-left">
-                    <div className="row">
-                        <div className="col sm 4 gambar">
-                            <img src="https://s1.bukalapak.com/img/69429388811/small/data.png.webp" alt=""/>
-                        </div>
-                        <div className="col sm 7">
-                            <div className="row">
-                                <p>pradia batik pekalongan</p>
-                            </div>
-                            <div className="row">
-                                <input type="button" value="-"/>
-                                <input style={{width:"50px"}} className="text-center" type="text"/>
-                                <input type="button" value="+"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-2 offset-md-2 text-right align-self-center">
-                    Rp.80.000
-                </div>
-                <div className="col-sm-1 align-self-center">
-                    <i style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
-                </div>
-            </div>
-          </ModalBody>
-          <ModalFooter>
-            <Button color="danger" onClick={this.toggle}>Lanjut ke Pembayaran</Button>
-          </ModalFooter>
-        </Modal>
+                    <input type="button" className="btn btn-outline-danger" value="Tambah ke Keranjang" onClick={this.addToCart} style={{width:"95%"}}/>
                   </div>
                   <div className="col-sm-6">
                     <input type="button" value="Chat Pelapak" className="btn btn-outline-success" style={{width:"95%"}} />

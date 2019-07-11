@@ -26,8 +26,7 @@ function App() {
       <Route path='/payment/paymetod/payreport' component={Paymentreport} exact/>
       <Route path='/searchFilter' component={SearchFilter} exact/>
       <Route path='/categorySection' component={CategorySection} exact/>
-      <Route path='/productList' component={ProductList} exact/>
-      
+      <Route path='/productList' component={ProductList} exact/>     
     </div>
   );
 }

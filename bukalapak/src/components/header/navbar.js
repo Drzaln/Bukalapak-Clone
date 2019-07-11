@@ -13,6 +13,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import "../../support/styles/navbar.css";
+import { Link } from 'react-router-dom'
 
 export default class Header extends React.Component {
   state = {
@@ -95,6 +96,7 @@ export default class Header extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
+                <Link to='/cart'>
                   <NavLink
                     href="/components/"
                     style={{ color: "white" }}
@@ -107,6 +109,8 @@ export default class Header extends React.Component {
                       aria-hidden="true"
                     />
                   </NavLink>
+                </Link>
+                  
                 </NavItem>
                 <NavItem>
                   <NavLink
