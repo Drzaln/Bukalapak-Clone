@@ -6,6 +6,7 @@ import PromoIni from "../components/carousels/promoHariIni";
 import BukaMall from "../components/carousels/bukaMall";
 import SearchFilter from '../components/SearchFilter/searchFilter';
 import CategorySection from '../components/categorySection/categorySection';
+import FlashCarousel from "../components/carousels/flashCarousel";
 import '../support/styles/home.css';
 import ProductList from '../components/productList/productList';
 
@@ -18,6 +19,7 @@ class Home extends Component {
                     <CarouselPromo/>
                     <SearchFilter/>
                     <CategorySection/>
+                    <FlashCarousel/>
                     <PromoIni/>
                     <BukaMall/>
                     <ProductList/>
