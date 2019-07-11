@@ -18,7 +18,6 @@ class Home extends Component {
                     <CarouselPromo/>
                     <SearchFilter/>
                     <CategorySection/>
-                    <h1>Home</h1>
                     <PromoIni/>
                     <BukaMall/>
                     <ProductList/>
