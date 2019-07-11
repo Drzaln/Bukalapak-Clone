@@ -38,12 +38,12 @@ export default class Header extends React.Component {
       <div>
         <Navbar expand="md">
           <div className="container-fluid">
-            <NavbarBrand href="/" className="logoNav">
+            <Link to='/'><NavbarBrand className="logoNav">
               <img
                 src="https://shopily-id.s3.amazonaws.com/uploads/stores/1479/1479_logo_e82fa5a7.png"
                 alt=""
               />
-            </NavbarBrand>
+            </NavbarBrand></Link>
             <UncontrolledDropdown>
               <DropdownToggle nav caret style={{ color: "white" }}>
                 <i className="fa fa-tasks" aria-hidden="true" /> Category

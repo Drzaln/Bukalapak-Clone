@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import '../../support/styles/productList.css';
 import { localServer } from '../../support/urlAPI/localServer';
 import { Link } from 'react-router-dom';
-import Axios from 'axios'
+import Axios from 'axios';
+import CurrencyFormat from 'react-currency-format';
 
 class ProductList extends Component {
     state = {
@@ -14,7 +15,6 @@ class ProductList extends Component {
         window.scrollTo(0, 0)
     }
     
-
     getAllProduct = () => {
         Axios.get(localServer + '/product')
         .then((res) => {
@@ -72,7 +72,7 @@ class ProductList extends Component {
                         <h4><span className="badge badge-danger rounded-circle badgeDiscount">{val.discount}%</span></h4>
                         <div className="card-body">
                             <h5 className="card-title hidden">{val.productName}</h5>
-                            <h7>Rp. {val.prize}</h7>
+                            <h7><CurrencyFormat value={val.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} /></h7>
                         </div>
                     </div>
                 </Link>

@@ -9,6 +9,7 @@
     "icheck-bootstrap": "^3.0.1",
     "react": "^16.8.6",
     "react-alice-carousel": "^1.15.1",
+    "react-currency-format": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^5.0.1",
