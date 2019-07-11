@@ -18,7 +18,7 @@ function App() {
       <Route path='/' component={Home} exact/>
       <Route path='/promoini' component={Promoini} exact/>
       <Route path='/bukaMall' component={BukaMall} exact/>
-      <Route path='/productDetail' component={ProductDetail} exact/>
+      <Route path='/productDetail/:id' component={ProductDetail} exact/>
       <Route path='/cart' component={Cart} exact/>
       <Route path='/payment' component={Payment} exact/>
       <Route path='/payment/paymetod' component={Paymentmetod} exact/>
