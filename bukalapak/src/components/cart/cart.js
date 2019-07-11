@@ -4,6 +4,7 @@ import Axios from 'axios';
 import { localServer } from '../../support/urlAPI/localServer';
 import CurrencyFormat from 'react-currency-format';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 
 class Cart extends Component {
     state = {
@@ -25,13 +26,18 @@ class Cart extends Component {
         })
     }
     
-    // deleteCart = () => {
-    //     let id = this.props.match.params.id
-    //     Axios.delete(localServer + '/cart/' + id)
-    //     .then((res => {
-            
-    //     }))
-    // }
+    deleteCart = (id) => {  
+        Axios.delete(localServer + '/cart/' + id)
+        .then((res => {
+            swal({
+                title: "the Book Has Been Deleted",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "Aww yiss!",
+            });
+            this.getAllCart()
+        }))
+    }
     
     totalHarga = () => {
         let total = this.state.listProduct.reduce((sum, item) => (
@@ -69,7 +75,7 @@ class Cart extends Component {
                         <CurrencyFormat value={val.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} />
                     </div>
                     <div className="col-sm-1 align-self-center">
-                        <i onClick={this.deleteCart} style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
+                        <i onClick={() => this.deleteCart(val.id)} style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
                     </div>
                     </div>
             )
