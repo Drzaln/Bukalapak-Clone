@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Footer from "../components/footer/footer";
 import ProductList from "../components/productList/productList";
+import Navbar from "../components/header/navbar";
 
 class ProductDetail extends Component {
   render() {
     return (
+      <div>
+      <Navbar/>
       <div className="container-fluid">
-        <div className="row">
+      <div className="row">
           <div className="col-9">
             <div className="card" style={{ width: "100%", height: "100%" }}>
               <div
@@ -281,6 +284,8 @@ class ProductDetail extends Component {
         <ProductList/>
         <Footer />
       </div>
+      </div>
+        
     );
   }
 }
