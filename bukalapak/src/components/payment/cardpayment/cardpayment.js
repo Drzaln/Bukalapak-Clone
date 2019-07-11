@@ -21,7 +21,7 @@ const cardpayment = (props) => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-md-5 offset-md-7 position-fixed">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-pie"></i><b>
@@ -29,7 +29,7 @@ const cardpayment = (props) => {
                   </b>
                   </div>
                 <div class="card-body">
-                {props.cardbodyb    }
+                {props.cardbodyb}
                 </div>
                 <div class="card-footer small text-muted">
                 <Link to={props.link}>
