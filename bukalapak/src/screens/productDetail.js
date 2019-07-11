@@ -5,7 +5,8 @@ import ProductList from "../components/productList/productList";
 import Navbar from "../components/header/navbar";
 import { localServer } from '../support/urlAPI/localServer';
 import Axios from "axios";
-import swal from 'sweetalert'
+import swal from 'sweetalert';
+import CurrencyFormat from 'react-currency-format';
 
 
 class ProductDetail extends Component {
@@ -57,6 +58,7 @@ getDetailProduct = () => {
             discount: productlist.discount,
             lapakName: productlist.lapakName,
             lapakImg: productlist.lapakImg,
+            qty : productlist.qty,
             lapakType: productlist.lapakType,
             category: productlist.category,
             create_at: productlist.create_at,
@@ -82,6 +84,18 @@ addToCart = () => {
     let { cart } = this.state;
     this.setState({cart})
     swal("produk berhasil masuk ke keranjang", "You clicked the button!", "success");
+  })
+}
+
+handlePlus = () => {
+  this.setState({
+    product : this.state.qty + 1
+  })
+}
+
+handleMin = () => {
+  this.setState({
+    product : this.state.product.qty - 1
   })
 }
 
@@ -166,8 +180,13 @@ addToCart = () => {
                   <p>ini bintang</p>
                   <div className="dropdown-divider" />
                   <text className="font-weight-bolder" style={{ fontSize: 35 }}>
-                    Rp. {this.state.product.prize}
+                    <CurrencyFormat value={this.state.product.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} />
                   </text>
+                  <div className="row ml-3 mt-3 mb-3">
+                    <input type="button" value="-" onClick={this.handleMin} />
+                    <input style={{width:"50px"}} className="text-center" value={this.state.product.qty} type="text"/>
+                    <input type="button" value="+" onClick={this.handlePlus} />
+                  </div>
                   <div className="col" style={{ paddingLeft: 0 }}>
                     <button
                       type="button"
