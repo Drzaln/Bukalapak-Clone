@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import {
   UncontrolledDropdown,
   Dropdown,
@@ -7,6 +7,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import Cardpayment from "./cardpayment/cardpayment";
+import Cart from "../cart/cart";
 
 class Payment extends Component {
   constructor(props) {
@@ -25,7 +26,9 @@ class Payment extends Component {
   }
   render() {
     return (
-      <Cardpayment
+      <Fragment>
+        <hr style={{border:"none"}} />
+        <Cardpayment
         headcardnamea="Detail Pembeli"
         cardbodya={
           <div class="card mb-3">
@@ -107,50 +110,7 @@ class Payment extends Component {
         headcardnamec="Detail Belanja"
         cardbodyc ={
           <div class="card mb-3">
-            <div class="card-header">
-              <i className="fa fa-university" aria-hidden="true" />
-              &nbsp;&nbsp;<b>Toko Maju 2 Tahun kedepan</b>
-            </div>
-            <div class="card-body">
-              <div>
-                <img src="https://s1.bukalapak.com/img/6413236382/small/IMG_3380.png.webp" />
-                <div class="row justify-content-between">
-                  <div class="col-6">Total Harga Barang</div>
-                  <div class="col-4">Rp15.325.000</div>
-                </div>
-                <div class="row justify-content-between">
-                  <div class="col-6">
-                    <input type="button" style={{display:'inline'}} className="btn btn-secondary" value="-"/>
-                    <input type="number" style={{width:45, display:'inline'}} className="form-control"/>
-                    <input type="button" style={{display:'inline'}} className="btn btn-secondary" value="+"/>
-                  </div>
-                  <div class="col-4"></div>
-                </div>
-              </div>
-              <div>
-                <div class="row justify-content-between" style={{marginTop:25 }}>
-                  <div class="col-2">Kurir</div>
-                  <div class="col-6">
-                    <select className="form-control">
-                      <option>J&T REG (3 hari kerja)</option>
-                      <option>J&T REG (3 hari kerja)</option>
-                      <option>J&T REG (3 hari kerja)</option>
-                      <option>J&T REG (3 hari kerja)</option>
-                    </select>
-                  </div>
-                  <div class="col-4">Rp15.325.000</div>
-                </div>
-              </div>
-              <div>
-                <div class="row justify-content-between" style={{marginTop:25 }}>
-                  <div class="col-2">Kurir</div>
-                  <div class="col-6">
-                    <textarea className="form-control"></textarea>
-                  </div>
-                  <div class="col-4"></div>
-                </div>
-              </div>
-            </div>
+            <Cart/>
           </div>
         }
         headcardnameb="Ringkasan Belanja"
@@ -179,6 +139,8 @@ class Payment extends Component {
           </div>
         }
       />
+      </Fragment>
+      
       // <div>
       //     <h1>Payment</h1>
       // </div>

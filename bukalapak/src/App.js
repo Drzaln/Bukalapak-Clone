@@ -12,21 +12,25 @@ import BukaMall from "../src/components/carousels/bukaMall";
 import SearchFilter from "../src/components/SearchFilter/searchFilter";
 import CategorySection from "../src/components/categorySection/categorySection";
 import ProductList from './components/productList/productList';
+import Header from './components/header/navbar';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
     <div>
-      <Route path='/' component={Home} exact/>
-      <Route path='/promoini' component={Promoini} exact/>
-      <Route path='/bukaMall' component={BukaMall} exact/>
-      <Route path='/productDetail/:id' component={ProductDetail} exact/>
-      <Route path='/cart' component={Cart} exact/>
-      <Route path='/payment' component={Payment} exact/>
-      <Route path='/payment/paymetod' component={Paymentmetod} exact/>
-      <Route path='/payment/paymetod/payreport' component={Paymentreport} exact/>
-      <Route path='/searchFilter' component={SearchFilter} exact/>
-      <Route path='/categorySection' component={CategorySection} exact/>
-      <Route path='/productList' component={ProductList} exact/>     
+      <Header/>
+        <Route path='/' component={Home} exact/>
+        <Route path='/promoini' component={Promoini} exact/>
+        <Route path='/bukaMall' component={BukaMall} exact/>
+        <Route path='/productDetail/:id' component={ProductDetail} exact/>
+        <Route path='/cart' component={Cart} exact/>
+        <Route path='/payment' component={Payment} exact/>
+        <Route path='/payment/paymetod' component={Paymentmetod} exact/>
+        <Route path='/payment/paymetod/payreport' component={Paymentreport} exact/>
+        <Route path='/searchFilter' component={SearchFilter} exact/>
+        <Route path='/categorySection' component={CategorySection} exact/>
+        <Route path='/productList' component={ProductList} exact/>    
+      <Footer/> 
     </div>
   );
 }

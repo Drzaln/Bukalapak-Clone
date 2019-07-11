@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "react-alice-carousel/lib/alice-carousel.css";
-import Footer from "../components/footer/footer";
 import ProductList from "../components/productList/productList";
-import Navbar from "../components/header/navbar";
 import { localServer } from '../support/urlAPI/localServer';
 import Axios from "axios";
 import swal from 'sweetalert';
 import CurrencyFormat from 'react-currency-format';
+import { Link } from 'react-router-dom'
 
 
 class ProductDetail extends Component {
@@ -101,8 +100,6 @@ handleMin = () => {
 
   render() {
     return (
-      <div>
-      <Navbar/>
       <div className="container-fluid">
       <div className="row">
           <div className="col-9">
@@ -188,13 +185,13 @@ handleMin = () => {
                     <input type="button" value="+" onClick={this.handlePlus} />
                   </div>
                   <div className="col" style={{ paddingLeft: 0 }}>
-                    <button
+                    <Link to='/payment'><button
                       type="button"
                       className="btn btn-success font-weight-bold"
                       style={{ width: "100%", borderRadius: 2 }}
                     >
                       Beli Sekarang
-                    </button>
+                    </button></Link>
                   </div>
                   <div
                     className="row justify-content-md-center"
@@ -363,10 +360,7 @@ handleMin = () => {
           </div>
         </div>
         <ProductList/>
-        <Footer />
-      </div>
-      </div>
-        
+      </div>        
     );
   }
 }

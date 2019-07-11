@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../components/header/navbar';
 import Footer from '../components/footer/footer';
 import CarouselPromo from '../components/CarouselPromo/CarouselPromo';
 import PromoIni from "../components/carousels/promoHariIni";
@@ -14,7 +13,6 @@ class Home extends Component {
     render() {
         return (
             <div className="wrap">
-                <Header/>
                 <div className="container-fluid">
                     <CarouselPromo/>
                     <SearchFilter/>
@@ -23,7 +21,6 @@ class Home extends Component {
                     <PromoIni/>
                     <BukaMall/>
                     <ProductList/>
-                    <Footer/>
                 </div>
             </div>
         );

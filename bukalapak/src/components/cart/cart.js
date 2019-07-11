@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Header from '../header/navbar';
 import '../../support/styles/cart.css';
 import Axios from 'axios';
 import { localServer } from '../../support/urlAPI/localServer';
-import Footer from '../footer/footer';
 import CurrencyFormat from 'react-currency-format';
+import { Link } from 'react-router-dom';
 
 class Cart extends Component {
     state = {
@@ -81,7 +80,7 @@ class Cart extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                
                 <div className="ml-5 mr-5">
                     {this.renderCartJsx()}
                 </div>
@@ -91,11 +90,11 @@ class Cart extends Component {
                         <h5>total harga <CurrencyFormat value={this.totalHarga()} displayType={'text'} thousandSeparator={true} prefix={'Rp '} /> </h5>
                     </div>
                     <div className="col-sm-2 text-right">
-                        <input type="button" className="btn btn-danger" value="Bayar"/>
+                        <Link to='/payment'><input type="button" className="btn btn-danger" value="Bayar"/></Link>
                     </div>                    
                 </div>
                 <hr/>
-                <Footer/>
+                
             </div>          
         );
     }

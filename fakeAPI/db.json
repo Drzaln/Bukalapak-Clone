@@ -583,6 +583,36 @@
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
+    },
+    {
+      "id": 11,
+      "productName": "Kaos RESIDENT EVIL NEMESIS Kaos Film Zombie Kaos Game Kaos Monster Hitam (S - XXL)",
+      "prize": 92800,
+      "rating": 3,
+      "img": "https://s3.bukalapak.com/img/8292154401/w-1000/Kaos_RESIDENT_EVIL_NEMESIS_kaos_film_zombie_kaos_game_kaos_m.jpg.webp",
+      "discount": 0,
+      "lapakName": "Pevita Kiss",
+      "lapakImg": "https://s3.bukalapak.com/avt/38250882/small/Saya-Suka-Belanja-Art-Vinyl-Sticker-wanita-Lemari-Kaca-Jendela-Dinding-Decal-Kreatif-Bar-Code-Stiker_scaled.jpg_640x640_scaled.jpg",
+      "qty": 1,
+      "lapakType": "Juragan",
+      "category": "Fashion Pria",
+      "create_at": "mm/dd/yy",
+      "role": "buka mall"
+    },
+    {
+      "id": 6,
+      "productName": "SIZE 28-35 - CELANA CARGO PDL PANJANG PRIA MOCCA - MOKA",
+      "prize": 133000,
+      "rating": 1,
+      "img": "https://s1.bukalapak.com/img/66296748811/w-1000/data.png.webp",
+      "discount": 60,
+      "lapakName": "Green Jeans",
+      "lapakImg": "https://s3.bukalapak.com/avt/88373992/small/iriedaily_slimshotflex_green_jeans_logo_lg.jpg",
+      "qty": 1,
+      "lapakType": "Pelapak Premium",
+      "category": "Fashion Pria",
+      "create_at": "mm/dd/yy",
+      "role": "buka mall"
     }
   ]
 }
