@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Cardpayment from "./cardpayment/cardpayment";
 
 class paymentmethod extends Component {

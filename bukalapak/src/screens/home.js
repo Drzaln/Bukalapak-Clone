@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../components/footer/footer';
 import CarouselPromo from '../components/CarouselPromo/CarouselPromo';
 import PromoIni from "../components/carousels/promoHariIni";
 import BukaMall from "../components/carousels/bukaMall";

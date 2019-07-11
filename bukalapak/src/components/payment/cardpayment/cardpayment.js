@@ -21,7 +21,7 @@ const cardpayment = (props) => {
                 </div>
               </div>
             </div>
-            <div class="col-md-5 offset-md-7 position-fixed">
+            <div class="col-md-5 offset-md-7 position-absolute">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-pie"></i><b>

@@ -211,7 +211,7 @@ class Footer extends Component {
             <input
               type="button"
               className="btn btn-outline-danger mt-2"
-              style={{ width: "333px" }}
+              style={{ width: "100%" }}
               value="Klik Link via SMS"
             />
           </div>
