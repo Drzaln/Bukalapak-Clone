@@ -22,10 +22,10 @@
       "lapakName": "P CLOTHES STORE",
       "qty": 1,
       "lapakImg": "https://s2.bukalapak.com/avt/22126541/small/image.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Pelapak Premium"
     },
     {
       "id": 2,
@@ -37,55 +37,55 @@
       "lapakName": "JEFFRY",
       "qty": 1,
       "lapakImg": "https://s3.bukalapak.com/avt/89267363/small/Screenshot_20190321-234219_1.png",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
     },
     {
       "id": 3,
-      "productName": "jam",
-      "prize": 1859000,
+      "productName": "Samsung Galaxy S10 Plus Ram 8gb Rom 128GB Grs Resmi Samsung Indonesia SEIN",
+      "prize": 12900000,
       "qty": 1,
       "rating": 3,
       "img": "https://s3.bukalapak.com/img/3276055253/large/Samsung_Galaxy_J5_Pro_.jpg",
       "discount": 10,
-      "lapakName": "Samsung Galaxy J5 Pro",
-      "lapakImg": "https://s2.bukalapak.com/avt/77167261/small/IMG-20120212-00006_scaled.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakName": "Doni cell",
+      "lapakImg": "https://www.bukalapak.com/images/default_avatar/small/default.jpg",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
     },
     {
       "id": 4,
-      "productName": "jam",
-      "prize": 1859000,
+      "productName": "Katalog Aoyama TV LED 15",
+      "prize": 2200000,
       "qty": 1,
       "rating": 3,
       "img": "https://s4.bukalapak.com/img/9079943879/large/TV_LED_POLYTRON_24_INCH_24T810_CINEMAX_HDMI_HD_READY_USB.jpg",
       "discount": 60,
-      "lapakName": "TV LED POLYTRON 24 INCH 24T810 CINEMAX HDMI HD READY USB",
-      "lapakImg": "https://s1.bukalapak.com/avt/12334114/small/8b.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakName": "Adi Cell",
+      "lapakImg": "https://s1.bukalapak.com/avt/12164524/small/20190712_083543_scaled.jpg",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Pelapak Premium"
     },
     {
       "id": 5,
-      "productName": "jam",
-      "prize": 1859000,
+      "productName": "REALME 3 PRO 128GB RAM 6GB",
+      "prize": 2994000,
       "qty": 1,
       "rating": 3,
-      "img": "https://s4.bukalapak.com/img/9079943879/large/TV_LED_POLYTRON_24_INCH_24T810_CINEMAX_HDMI_HD_READY_USB.jpg",
+      "img": "https://s1.bukalapak.com/img/63412575911/w-300/data.png.webp",
       "discount": 60,
-      "lapakName": "TV LED POLYTRON 24 INCH 24T810 CINEMAX HDMI HD READY USB",
-      "lapakImg": "https://s1.bukalapak.com/avt/12334114/small/8b.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakName": "Lilang",
+      "lapakImg": "https://s1.bukalapak.com/avt/61574524/small/4ef754f204face19ff90.",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Pelapak Premium"
     },
     {
       "id": 6,
@@ -97,10 +97,10 @@
       "discount": 60,
       "lapakName": "Green Jeans",
       "lapakImg": "https://s3.bukalapak.com/avt/88373992/small/iriedaily_slimshotflex_green_jeans_logo_lg.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Juragan"
     },
     {
       "id": 7,
@@ -112,10 +112,10 @@
       "discount": 10,
       "lapakName": "JoCin Shop",
       "lapakImg": "https://s4.bukalapak.com/avt/93832583/small/ooo.JPG",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Juragan"
     },
     {
       "id": 8,
@@ -127,10 +127,10 @@
       "discount": 10,
       "lapakName": "JoCin Shop",
       "lapakImg": "https://s4.bukalapak.com/avt/93832583/small/ooo.JPG",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Juragan"
     },
     {
       "id": 9,
@@ -142,10 +142,10 @@
       "discount": 10,
       "lapakName": "Sentradagang",
       "lapakImg": "https://s2.bukalapak.com/avt/7024426/small/1457884711219_loghead.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Juragan"
     },
     {
       "id": 10,
@@ -157,7 +157,7 @@
       "discount": 10,
       "lapakName": "JEshop",
       "lapakImg": "https://s3.bukalapak.com/avt/38250882/small/Saya-Suka-Belanja-Art-Vinyl-Sticker-wanita-Lemari-Kaca-Jendela-Dinding-Decal-Kreatif-Bar-Code-Stiker_scaled.jpg_640x640_scaled.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -172,10 +172,10 @@
       "discount": 0,
       "lapakName": "Pevita Kiss",
       "lapakImg": "https://s3.bukalapak.com/avt/38250882/small/Saya-Suka-Belanja-Art-Vinyl-Sticker-wanita-Lemari-Kaca-Jendela-Dinding-Decal-Kreatif-Bar-Code-Stiker_scaled.jpg_640x640_scaled.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "Pelapak Premium"
     },
     {
       "id": 12,
@@ -187,7 +187,7 @@
       "discount": 0,
       "lapakName": "JoCin Shop",
       "lapakImg": "https://s4.bukalapak.com/avt/93832583/small/ooo.JPG",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -202,7 +202,7 @@
       "discount": 0,
       "lapakName": "P CLOTHES STORE",
       "lapakImg": "https://s2.bukalapak.com/avt/22126541/small/image.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -217,10 +217,10 @@
       "discount": 0,
       "lapakName": "Pusat Army BDG",
       "lapakImg": "https://s2.bukalapak.com/avt/21236631/small/IMG-20170228-WA0002_scaled.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Pria",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 15,
@@ -232,10 +232,10 @@
       "discount": 1,
       "lapakName": "Buzper",
       "lapakImg": "https://s3.bukalapak.com/avt/39770042/small/Untitled-1.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Komputer",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 16,
@@ -247,10 +247,10 @@
       "discount": 1,
       "lapakName": "Dunia Toner",
       "lapakImg": "https://s1.bukalapak.com/avt/15981411/small/images%20%2813%29_scaled.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Komputer",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     },
     {
       "id": 17,
@@ -262,7 +262,7 @@
       "discount": 1,
       "lapakName": "ILoops Expert",
       "lapakImg": "https://s1.bukalapak.com/avt/1520939/small/Logo_Kotak.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Komputer",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -292,10 +292,10 @@
       "discount": 0,
       "lapakName": "Java Solution Laptop",
       "lapakImg": "https://s2.bukalapak.com/avt/77837271/small/hp_143.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     },
     {
       "id": 20,
@@ -307,7 +307,7 @@
       "discount": 0,
       "lapakName": "Java Solution Laptop",
       "lapakImg": "https://s2.bukalapak.com/avt/77837271/small/hp_143.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Elektronik",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -322,10 +322,10 @@
       "discount": 0,
       "lapakName": "LOOK BDG",
       "lapakImg": "https://s0.bukalapak.com/avt/02737502/medium/vector_art_logo_diamond.jpg",
-      "lapakType": "Pelapak Premium",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 22,
@@ -337,7 +337,7 @@
       "discount": 0,
       "lapakName": "Rizkyfanstore",
       "lapakImg": "https://s1.bukalapak.com/avt/61331012/medium/Screenshot_2017-10-03-22-39-53-51.png",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -352,10 +352,10 @@
       "discount": 0,
       "lapakName": "momyaisha_olshop",
       "lapakImg": "https://s0.bukalapak.com/avt/08803981/medium/IMG-20180117-WA0154_scaled.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 24,
@@ -367,7 +367,7 @@
       "discount": 0,
       "lapakName": "LOOK BDG",
       "lapakImg": "https://s0.bukalapak.com/avt/02737502/medium/vector_art_logo_diamond.jpg",
-      "lapakType": "Recommended Seller",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -382,10 +382,10 @@
       "discount": 0,
       "lapakName": "LOOK BDG",
       "lapakImg": "https://s0.bukalapak.com/avt/02737502/medium/vector_art_logo_diamond.jpg",
-      "lapakType": "Recommended Seller",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     },
     {
       "id": 27,
@@ -397,7 +397,7 @@
       "discount": 0,
       "lapakName": "Charis Store",
       "lapakImg": "https://s1.bukalapak.com/avt/11500404/medium/image.jpg",
-      "lapakType": "Pedagang",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -412,10 +412,10 @@
       "discount": 10,
       "lapakName": "yellowshop11",
       "lapakImg": "https://s1.bukalapak.com/avt/66568024/medium/IMG-20190530-WA0000_scaled.jpg",
-      "lapakType": "Calon Juragan",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     },
     {
       "id": 29,
@@ -427,7 +427,7 @@
       "discount": 10,
       "lapakName": "Zona Wanita Pria",
       "lapakImg": "https://s3.bukalapak.com/avt/38801183/medium/Screenshot_2019-04-16-20-43-45-887_com.miui.gallery.png",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Fashion Wanita",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -442,10 +442,10 @@
       "discount": 10,
       "lapakName": "Tempat Makan97",
       "lapakImg": "https://www.bukalapak.com/images/default_avatar/small/default.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Rumah Tangga",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     },
     {
       "id": 31,
@@ -457,10 +457,10 @@
       "discount": 40,
       "lapakName": "Muebel_JinggaJepara",
       "lapakImg": "https://s1.bukalapak.com/avt/13710814/small/ef711995d65f3f110777.",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Rumah Tangga",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 32,
@@ -472,10 +472,10 @@
       "discount": 70,
       "lapakName": "Jocin Shop",
       "lapakImg": "https://s4.bukalapak.com/avt/93832583/small/ooo.JPG",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Rumah Tangga",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "juragan"
     },
     {
       "id": 33,
@@ -487,7 +487,7 @@
       "discount": 80,
       "lapakName": "Jocin Shop",
       "lapakImg": "https://s0.bukalapak.com/avt/55555383/small/IMG_20181101_090835_309_scaled.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Perawatan dan Kecantikan",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -502,7 +502,7 @@
       "discount": 80,
       "lapakName": "One Store 25",
       "lapakImg": "https://s4.bukalapak.com/avt/92699863/small/IMG_20190329_173008_scaled.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Perawatan dan Kecantikan",
       "create_at": "mm/dd/yy",
       "role": "buka mall"
@@ -517,27 +517,11 @@
       "discount": 35,
       "lapakName": "Rolis Store",
       "lapakImg": "https://s2.bukalapak.com/avt/21856231/small/rolis_s_copy.jpg",
-      "lapakType": "Juragan",
+      "lapakType": "",
       "category": "Perawatan dan Kecantikan",
       "create_at": "mm/dd/yy",
-      "role": "buka mall"
+      "role": "pelapak premium"
     }
   ],
-  "cart": [
-    {
-      "id": 2,
-      "productName": "CASING / BEZEL SAMSUNG J5",
-      "prize": 17000,
-      "rating": 4,
-      "img": "https://s1.bukalapak.com/img/110016509/large/CASING___BEZEL_SAMSUNG_J5.jpg",
-      "discount": 40,
-      "lapakName": "JEFFRY",
-      "lapakImg": "https://s3.bukalapak.com/avt/89267363/small/Screenshot_20190321-234219_1.png",
-      "qty": 1,
-      "lapakType": "Pelapak Premium",
-      "category": "Elektronik",
-      "create_at": "mm/dd/yy",
-      "role": "buka mall"
-    }
-  ]
+  "cart": []
 }

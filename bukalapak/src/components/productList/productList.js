@@ -60,6 +60,27 @@ class ProductList extends Component {
         })
     }
 
+    searchBukaMall = () => {
+        Axios.get(localServer + '/product?q=buka mall')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchPelapakPremium = () => {
+        Axios.get(localServer + '/product?q=pelapak premium')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
+    searchJuragan = () => {
+        Axios.get(localServer + '/product?q=juragan')
+        .then((res) => {
+            this.setState({listProduct : res.data})
+        })
+    }
+
     
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
@@ -73,6 +94,7 @@ class ProductList extends Component {
                         <h4><span className="badge badge-danger rounded-circle badgeDiscount">{val.discount}%</span></h4>
                         <div className="card-body">
                             <h5 className="card-title hidden">{val.productName}</h5>
+                            <p style={{fontSize:"14px"}}>{val.role}</p>
                             <h7><CurrencyFormat value={val.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} /></h7>
                         </div>
                     </div>
@@ -92,7 +114,10 @@ class ProductList extends Component {
                         <b style={{cursor:"pointer"}} onClick={this.searchFashionWanita}>Fashion Wanita</b><br/><br/>
                         <b style={{cursor:"pointer"}} onClick={this.searchElektronik}>Elektronik</b><br/><br/>
                         <b style={{cursor:"pointer"}} onClick={this.searchERumahTangga}>Rumah Tangga</b><br/><br/>
-                        <b style={{cursor:"pointer"}} onClick={this.searchPerawatan}>Perawatan dan Kecantikan</b></p>
+                        <b style={{cursor:"pointer"}} onClick={this.searchPerawatan}>Perawatan dan Kecantikan</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchPelapakPremium}>Pelapak Premium</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchJuragan}>Juragan</b><br/><br/>
+                        <b style={{cursor:"pointer"}} onClick={this.searchBukaMall}>BukaMall</b><br/><br/></p>
                         <hr/>
                         <h5 className="mb-3">Jasa Pengiriman</h5>
                         <p><b>J&T REG <input type="checkbox"/></b></p>
