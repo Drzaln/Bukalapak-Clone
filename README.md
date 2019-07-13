@@ -1,6 +1,9 @@
 ## :octocat: Bukalapak Clone
----
-Clone dari website Bukalapak, dibuat dengan ReactJS dan Json-Server sebagai data dummy.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/078aeb1c-3ad7-417e-9b4b-bdef10d7793c/deploy-status)](https://bulak.netlify.com)
+
+Clone dari website Bukalapak, dibuat dengan ReactJS, ExpressJS, dan MySql sebagai datanya.
 
 ### Cara menjalankan
 
@@ -11,13 +14,8 @@ Clone dari website Bukalapak, dibuat dengan ReactJS dan Json-Server sebagai data
 2. Install depedencies di folder bukalapak dan fakeAPI
    ```
    $ cd bukalapak && npm i
-   $ cd fakeAPI && npm i
    ```
-3. Jalankan dahulu fakeAPI
-   ```
-   $ npm run json:server
-   ```
-4. Jalankan bukalapak
+3. Masuk ke direktori dan jalankan bukalapak
    ```
    $ npm start
    ```
