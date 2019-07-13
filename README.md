@@ -17,7 +17,7 @@ Clone dari website Bukalapak, dibuat dengan ReactJS, ExpressJS, dan MySql sebaga
    ```
 3. Masuk ke direktori dan jalankan bukalapak
    ```
-   $ npm start
+   $ node app.js
    ```
 
 cheers~ :beers:
