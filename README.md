@@ -22,6 +22,13 @@ Clone dari website Bukalapak, dibuat dengan ReactJS, ExpressJS, dan MySql sebaga
    ```
 
 cheers~ :beers:
+
+## Screenshots :beers:
+
+![image](screenshot/1.png)
+
+![image](screenshot/2.png)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -36,9 +43,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-## Screnshots :beers:
-
-![image](screenshot/1.png)
-
-![image](screenshot/2.png)
