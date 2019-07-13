@@ -18,7 +18,8 @@ class ProductList extends Component {
     getAllProduct = () => {
         Axios.get(localServer + '/product')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            console.log(res.data.result)
+            this.setState({listProduct : res.data.result})
         })
         .catch((err) => {
             console.log(err)
@@ -28,56 +29,56 @@ class ProductList extends Component {
     searchFashionPria = () => {
         Axios.get(localServer + '/product?q=fashion pria')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchFashionWanita = () => {
         Axios.get(localServer + '/product?q=fashion wanita')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchElektronik = () => {
         Axios.get(localServer + '/product?q=elektronik')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchERumahTangga = () => {
         Axios.get(localServer + '/product?q=rumah tangga')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchPerawatan = () => {
         Axios.get(localServer + '/product?q=perawatan dan kecantikan')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchBukaMall = () => {
         Axios.get(localServer + '/product?q=buka mall')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchPelapakPremium = () => {
         Axios.get(localServer + '/product?q=pelapak premium')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
     searchJuragan = () => {
         Axios.get(localServer + '/product?q=juragan')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
     }
 
@@ -85,7 +86,7 @@ class ProductList extends Component {
     renderProductJsx = () => {
         let jsx = this.state.listProduct.map((val) => {
             return (
-                <Link to={'/productDetail/' + val.id} style={{color:'black', textDecoration:"none"}}>
+                <Link to={'/productDetail/' + val.id_product} style={{color:'black', textDecoration:"none"}}>
                     <div className="card cardProduct mr-3 mb-3" style={{width: '12rem'}}>
                         <img src={val.img} className="card-img-top image" alt="..." />
                         <div className="middle">

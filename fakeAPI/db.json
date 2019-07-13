@@ -523,5 +523,21 @@
       "role": "pelapak premium"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 15,
+      "productName": "Sandisk Ultra Dual 16Gb OTG Flash Drive M3.0 - SDDD3",
+      "prize": 136200,
+      "rating": 3,
+      "img": "https://s4.bukalapak.com/img/9890069003/w-300/sandisk_ultra_dual_otg_flash_drive_m30_16gb_sddd3_16g_black_.jpg.webp",
+      "discount": 1,
+      "lapakName": "Buzper",
+      "lapakImg": "https://s3.bukalapak.com/avt/39770042/small/Untitled-1.jpg",
+      "qty": 1,
+      "lapakType": "",
+      "category": "Komputer",
+      "create_at": "mm/dd/yy",
+      "role": "juragan"
+    }
+  ]
 }

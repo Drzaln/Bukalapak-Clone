@@ -45,11 +45,11 @@ componentDidMount(){
 getDetailProduct = () => {
   let id = this.props.match.params.id
   Axios.get(localServer +`/product/${id}`).then(res =>{
-      let productlist = res.data
+      let productlist = res.data.result
       console.log(res)
       this.setState({
           product:{
-            id: productlist.id,
+            id: productlist.id_product,
             productName: productlist.productName,
             prize: productlist.prize,
             rating: productlist.rating,
@@ -70,7 +70,7 @@ getDetailProduct = () => {
 getAllProduct = () => {
   Axios.get(localServer + '/product')
   .then((res) => {
-      this.setState({productList : res.data})
+      this.setState({productList : res.data.result})
   })
   .catch((err) => {
       console.log(err)
