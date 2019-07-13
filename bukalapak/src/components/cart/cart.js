@@ -17,18 +17,19 @@ class Cart extends Component {
     }
 
     getAllCart = () => {
-        Axios.get(localServer + '/cart')
+        Axios.get(localServer + 'cart/')
         .then((res) => {
-            this.setState({listProduct : res.data})
+            this.setState({listProduct : res.data.result})
         })
         .catch((err) => {
             console.log(err)
         })
     }
     
-    deleteCart = (id) => {  
-        Axios.delete(localServer + '/cart/' + id)
+    deleteCart = (id_cart) => {  
+        Axios.delete(localServer + 'cart/' + id_cart)
         .then((res => {
+            console.log(`hapus`, id_cart)
             swal({
                 title: "the Book Has Been Deleted",
                 text: "You clicked the button!",
@@ -75,7 +76,7 @@ class Cart extends Component {
                         <CurrencyFormat value={val.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} />
                     </div>
                     <div className="col-sm-1 align-self-center">
-                        <i onClick={() => this.deleteCart(val.id)} style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
+                        <i onClick={() => this.deleteCart(val.id_cart)} style={{cursor:"pointer"}} className="fa fa-times" aria-hidden="true" />
                     </div>
                     </div>
             )

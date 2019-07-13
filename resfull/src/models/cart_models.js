@@ -17,7 +17,7 @@ module.exports = {
     },
     deleteCategory : (id_category, callback) =>{
       console.log(id_category)
-      condb.query('DELETE FROM tb_category WHERE id_category = ?', id_category,(err, result)=>{
+      condb.query('DELETE FROM cart WHERE id_cart = ?', id_category,(err, result)=>{
           if(err) console.log(err)
 
           callback(result)

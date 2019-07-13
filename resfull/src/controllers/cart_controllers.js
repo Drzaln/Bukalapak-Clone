@@ -13,7 +13,7 @@ module.exports = {
  
     insertCategory: (req, res) =>{
       const category = {
-        id_product: req.body.id_product,
+        id_product: req.body.id,
         }
       categoryModels.insertCategory(category, (err, result)=>{
         if(err) console.log(err)

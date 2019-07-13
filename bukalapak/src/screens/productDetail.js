@@ -22,7 +22,8 @@ class ProductDetail extends Component {
     lapakType: '',
     category: '',
     create_at: '',
-    role: ''
+    role: '',
+    qty: 1
        
     },
     modal: false,
@@ -44,9 +45,10 @@ componentDidMount(){
 
 getDetailProduct = () => {
   let id = this.props.match.params.id
-  Axios.get(localServer +`/product/${id}`).then(res =>{
-      let productlist = res.data.result
-      console.log(res)
+
+  Axios.get(localServer +`product/productDetail/${id}`).then(res =>{
+      let productlist = res.data.result[0]
+      console.log('jangkrik bos',res)
       this.setState({
           product:{
             id: productlist.id_product,
@@ -68,7 +70,7 @@ getDetailProduct = () => {
 }
 
 getAllProduct = () => {
-  Axios.get(localServer + '/product')
+  Axios.get(localServer + 'product')
   .then((res) => {
       this.setState({productList : res.data.result})
   })
@@ -78,17 +80,27 @@ getAllProduct = () => {
 }
 
 addToCart = () => {
-  Axios.post(localServer + '/cart' , this.state.product)
+  Axios.post(localServer + 'cart/' , this.state.product)
   .then((res) => {
     let { cart } = this.state;
     this.setState({cart})
-    swal("produk berhasil masuk ke keranjang", "You clicked the button!", "success");
+    swal(`produk berhasil masuk ke keranjang`, "You clicked the button!", "success");
+  })
+}
+
+onBuy = () => {
+  console.log(`lkjaljalds`, this.state.product)
+  Axios.post(localServer + 'cart/' , this.state.product)
+  .then((res) => {
+console.log(`adsajdslkajdlkad`, res)
+    let { cart } = this.state;
+    this.setState({cart})
   })
 }
 
 handlePlus = () => {
   this.setState({
-    product : this.state.qty + 1
+    product : this.state.product.qty + 1
   })
 }
 
@@ -96,6 +108,10 @@ handleMin = () => {
   this.setState({
     product : this.state.product.qty - 1
   })
+}
+
+handleChange = (event) => {
+  this.setState({qty: event.target.value});
 }
 
   render() {
@@ -180,15 +196,16 @@ handleMin = () => {
                     <CurrencyFormat value={this.state.product.prize} displayType={'text'} thousandSeparator={true} prefix={'Rp '} />
                   </text>
                   <div className="row ml-3 mt-3 mb-3">
-                    <input type="button" value="-" onClick={this.handleMin} />
-                    <input style={{width:"50px"}} className="text-center" value={this.state.product.qty} type="text"/>
-                    <input type="button" value="+" onClick={this.handlePlus} />
+                    <input type="button" value="-" onClick={() => {}} />
+                    <input style={{width:"50px"}} className="text-center" value={this.state.product.qty} onChange={this.handleChange} type="text"/>
+                    <input type="button" value="+" onClick={() => {}} />
                   </div>
                   <div className="col" style={{ paddingLeft: 0 }}>
                     <Link to='/payment'><button
                       type="button"
                       className="btn btn-success font-weight-bold"
                       style={{ width: "100%", borderRadius: 2 }}
+                      onClick={this.onBuy}
                     >
                       Beli Sekarang
                     </button></Link>

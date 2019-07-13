@@ -3,20 +3,9 @@ const isEmpty = require(`lodash.isempty`)
 const help = require(`../helpers/helpers`)
 
 module.exports = {
-    getShelf: (req, res) =>{
-        shelfModels.getShelf((err, result) =>{
-            if (err) console.log(err)
-
-            if(isEmpty(result)){
-              res.json({
-                  status: 404,
-                  message: "data not Found "
-              });
-            }else{
-              help.response(res, result, 200)
-            }
-        })
-    },
+  getShelf: (req, res) => {
+    return res.json({ message: 'Hello!!! Welcome to Bukalapak Clone' })
+  },
     insertShelf: (req, res) =>{
         const shelf = {
           shelf_name: req.body.shelf_name
